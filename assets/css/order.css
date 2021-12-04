@@ -30,9 +30,3 @@
 .products.active {
   display: grid;
 }
-
-@media (max-width: 768px) {
-  .tabs {
-    max-width: 550px;
-  }
-}

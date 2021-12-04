@@ -415,7 +415,8 @@ nav .nav-link.active {
   margin-bottom: 40px;
 }
 
-.order-section p {
+.order-section p,
+.order-section h2 {
   text-align: center;
 }
 
@@ -846,16 +847,20 @@ footer ul a:hover {
   }
 
   .tabs {
-    max-width: 400px;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    flex-direction: column;
   }
 
   .tab + .tab {
-    margin-left: 20px;
+    margin: 20px 0 0;
   }
 
-  .tab:last-child {
-    margin: 20px 0 0;
+  .products .item {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .products .item-image {
+    max-width: 100%;
+    margin: 0 0 20px;
   }
 }
