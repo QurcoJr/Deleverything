@@ -94,7 +94,7 @@ function updateCartView() {
   if (!cart.length) {
     cartContent.classList.add('no-item')
     cartContentHTML = `<span>We couldn't find any items in your cart.</span>
-    <a href="/order.html" class="link-button primary">Start an Order</a>`
+    <a href="./order.html" class="link-button primary">Start an Order</a>`
   } else {
     cartContent.classList.remove('no-item')
     cartContentHTML = cart

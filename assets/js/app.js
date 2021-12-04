@@ -22,8 +22,13 @@ closeCartButton.addEventListener('click', closeCart)
 backdrop.addEventListener('click', closeCart)
 menu.addEventListener('click', () => nav.classList.toggle('expanded'))
 
+const pathnameParts = window.location.pathname.split('/')
+
 navLinks.forEach(link => {
-  if (link.getAttribute('href') === window.location.pathname) {
+  let hrefParts = link.getAttribute('href').split('/')
+  if (
+    hrefParts[hrefParts.length - 1] === pathnameParts[pathnameParts.length - 1]
+  ) {
     link.classList.add('active')
   }
 })
