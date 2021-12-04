@@ -546,6 +546,7 @@ footer ul a:hover {
 
 .cart-wrapper-inner {
   position: relative;
+  z-index: 10001;
   height: 100vh;
 }
 
