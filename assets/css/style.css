@@ -497,7 +497,7 @@ footer ul a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1000;
   width: 480px;
   transform: translateX(0);
   right: -480px;
@@ -546,6 +546,7 @@ footer ul a:hover {
 
 .cart-wrapper-inner {
   position: relative;
+  z-index: 10001;
   height: 100vh;
 }
 
@@ -839,6 +840,7 @@ footer ul a:hover {
   nav .nav-link {
     display: inline-block;
     padding: 25px 16px;
+    width: 100%;
   }
 
   .cart-wrapper {
