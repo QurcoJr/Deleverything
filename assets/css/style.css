@@ -497,7 +497,7 @@ footer ul a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1000;
   width: 480px;
   transform: translateX(0);
   right: -480px;
@@ -801,7 +801,7 @@ footer ul a:hover {
     position: relative;
   }
 
-  nav ul {
+  header nav ul {
     box-shadow: 0 50px 80px -30px rgb(53 52 72 / 20%);
     height: 0;
     transition: height 400ms ease;
@@ -814,31 +814,32 @@ footer ul a:hover {
     width: 100%;
   }
 
-  nav.expanded ul {
+  header nav.expanded ul {
     height: 280px;
   }
 
-  nav ul li {
+  header nav ul li {
     opacity: 0;
     transition: opacity 100ms ease;
   }
 
-  nav.expanded ul li {
+  header nav.expanded ul li {
     transition: opacity 400ms 250ms ease;
     opacity: 1;
   }
 
-  nav.expanded .burger-menu {
+  header nav.expanded .burger-menu {
     background: var(--primary);
   }
 
-  nav.expanded .burger-menu img {
+  header nav.expanded .burger-menu img {
     filter: brightness(3);
   }
 
-  nav .nav-link {
+  header nav .nav-link {
     display: inline-block;
     padding: 25px 16px;
+    width: 100%;
   }
 
   .cart-wrapper {
