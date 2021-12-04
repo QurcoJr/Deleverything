@@ -1,0 +1,38 @@
+.order-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background: #f5fbfc url('../images/yum.png') center center no-repeat;
+}
+
+.order-hero h2 {
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.order-hero span {
+  color: var(--primary);
+}
+
+.order-content {
+  padding: 60px 0 40px;
+}
+
+.tabs {
+  margin-bottom: 30px;
+}
+
+.products {
+  display: none;
+}
+
+.products.active {
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    max-width: 550px;
+  }
+}

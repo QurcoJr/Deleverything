@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/order.css" />
+    <link rel="icon" href="assets/images/logo.svg" type="image/icon" />
+    <title>Order | Deleverything</title>
+  </head>
+  <body>
+    <div class="banner">
+      <p>We're open and available for takeaway & delivery.</p>
+      &nbsp;<a href="order.html">Order Now</a>
+    </div>
+    <header>
+      <a aria-label="Home" href="/">
+        <img class="logo" src="assets/images/logo.svg" alt="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/order.html" class="nav-link">Order</a></li>
+          <li><a href="/company.html" class="nav-link">Company</a></li>
+          <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+        <button class="button primary cart">
+          <span class="cart-quantity"></span>
+          <img
+            class="cart-icon"
+            src="assets/images/shopping-cart.svg"
+            alt="shopping cart"
+          />
+        </button>
+        <button class="button burger-menu" aria-label="menu">
+          <img src="assets/images/menu.svg" alt="menu" />
+        </button>
+      </nav>
+    </header>
+    <div class="backdrop"></div>
+    <aside class="cart-wrapper">
+      <div class="cart-wrapper-inner">
+        <header>
+          <span>Your Order</span>
+          <button class="close-cart" aria-label="close cart">
+            <img src="assets/images/close.svg" alt="close" />
+          </button>
+        </header>
+        <div class="cart-content"></div>
+      </div>
+    </aside>
+    <section class="order-hero">
+      <div class="wrapper">
+        <h2 data-aos="fade-down" data-aos-duration="500">
+          Get your food <span>delivered</span>,<br />
+          or <span>pick-up</span> in store.
+        </h2>
+      </div>
+    </section>
+    <div class="wrapper">
+      <main class="order-content">
+        <div class="tabs">
+          <button class="button primary tab" data-tab="0">Full Menu</button>
+          <button class="button secondary tab" data-tab="1">Burgers</button>
+          <button class="button secondary tab" data-tab="2">Drinks</button>
+          <button class="button secondary tab" data-tab="3">Side</button>
+        </div>
+        <div class="tab-content products-container">
+          <div class="tab-panel products active" data-tab="0"></div>
+          <div class="tab-panel products" data-tab="1"></div>
+          <div class="tab-panel products" data-tab="2"></div>
+          <div class="tab-panel products" data-tab="3"></div>
+        </div>
+      </main>
+    </div>
+    <div class="footer-bg">
+      <div class="wrapper">
+        <footer>
+          <div class="footer-cta">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="logo" />
+            </a>
+            <p class="body-paragraph">
+              Takeaway & Delivery template <br />
+              for small - medium businesses.
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/order.html">Order</a></li>
+              <li><a href="/company.html">Company</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+            </ul>
+          </nav>
+        </footer>
+      </div>
+    </div>
+    <script>
+      AOS.init()
+    </script>
+    <script src="assets/js/app.js"></script>
+    <script type="module" src="assets/js/cart.js"></script>
+    <script type="module" src="assets/js/order.js"></script>
+    <script type="module" src="assets/js/products.js"></script>
+    <script src="assets/js/tabs.js"></script>
+  </body>
+</html>
