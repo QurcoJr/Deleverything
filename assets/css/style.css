@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -566,6 +567,7 @@ footer ul a:hover {
   margin-bottom: 40px;
   color: #333;
   font-size: 15px;
+  text-align: center;
 }
 
 .cart-content .cart-item {
