@@ -10,11 +10,13 @@ function openCart() {
   cart.classList.toggle('expanded')
   backdrop.classList.toggle('expanded')
   nav.classList.remove('expanded')
+  document.body.classList.add('hide')
 }
 
 function closeCart() {
   cart.classList.remove('expanded')
   backdrop.classList.remove('expanded')
+  document.body.classList.remove('hide')
 }
 
 cartButton.addEventListener('click', openCart)
