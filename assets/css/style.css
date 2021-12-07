@@ -809,15 +809,17 @@ footer ul a:hover {
     transition: height 400ms ease;
     position: absolute;
     left: 0;
-    z-index: 10;
     top: 95px;
     flex-direction: column;
     background: #fff;
     width: 100%;
+    overflow: hidden;
   }
 
   header nav.expanded ul {
     height: 280px;
+    z-index: 10;
+    visibility: visible;
   }
 
   header nav ul li {
